@@ -1,0 +1,24 @@
+version: "3.0"
+services:
+  server:
+    container_name: "server"
+    restart: on-failure
+    build: "./backend/"
+    ports:
+      - "8080:80"
+    network_mode: "host"
+    environment:
+      - PORT=3000
+  web:
+    container_name: "web"
+    depends_on:
+      - server
+    restart: on-failure
+    build: "./web/"
+    ports:
+      - "8080:80"
+    network_mode: "host"
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"

@@ -1,0 +1,79 @@
+{
+    "customer": {
+        "host": "127.0.0.1"
+    },
+    "server": {
+        "services": [
+            {
+                "name": "openWeather",
+                "widgets": [
+                    {
+                        "name": "temperature",
+                        "description": "Display city temperature",
+                        "params": [
+                            {
+                                "name": "city",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "weatherCity",
+                        "description": "Display city weather",
+                        "params": [
+                            {
+                                "name": "city",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "speedrun.com",
+                "widgets": [
+                    {
+                        "name": "SpeedrunGames",
+                        "description": "Displaying the list of speedrun games for a video game license",
+                        "params": [
+                            {
+                                "name": "game",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "github",
+                "widgets": [
+                    {
+                        "name": "WidgetGithub",
+                        "description": "Displaying the list of repositories for a user",
+                        "params": [
+                            {
+                                "name": "username",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "lichess",
+                "widgets": [
+                    {
+                        "name": "Lichess",
+                        "description": "Displaying the top 10 leaderbord for a chess category",
+                        "params": [
+                            {
+                                "name": "category",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
